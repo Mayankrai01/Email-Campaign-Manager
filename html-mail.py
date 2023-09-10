@@ -34,10 +34,10 @@ subject = "Your Daily Newsletter"
 preview_text = "Check out our latest news!"
 article_url = "https://www.google.com"
 published_date = "September 9, 2023"
-html_content = "<p>Click on read more to go to documentation for testing this API.</p>"
+html_content = "<p>Click on read more to go to article.</p>"
 plain_text_content = "This is the plain text version of your email."
 
-NUM_THREADS = 3
+NUM_THREADS = 20
 
 def send_email(to_email):
     try:
