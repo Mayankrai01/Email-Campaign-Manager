@@ -26,9 +26,6 @@ def addUser():
 def removeUser():
     return UnsubscribeUser.unsubscribe()
 
-@app.route('/getallemails', methods=['GET'])
-def getallemails():
-    return getEmails.getAllEmails()
 
 
 
