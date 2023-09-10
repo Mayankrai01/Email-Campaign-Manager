@@ -22,8 +22,8 @@ mysql = mysql.connector.connect(
 
 HOST = "smtp.gmail.com"
 PORT = 25
-FROM_EMAIL = "mayank.101120@gmail.com"
-TO_EMAIL = "mayankkumarrai_se20b15_62@dtu.ac.in"
+FROM_EMAIL = <"Enter Sender Email">
+TO_EMAIL = <"Enter Reciepient Email">
 PASSWORD = getpass.getpass("Enter password: ")
 
 template_loader = jinja2.FileSystemLoader(searchpath="./templates")
