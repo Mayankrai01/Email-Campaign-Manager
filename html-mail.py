@@ -37,7 +37,7 @@ published_date = "September 9, 2023"
 html_content = "<p>Click on read more to go to article.</p>"
 plain_text_content = "This is the plain text version of your email."
 
-NUM_THREADS = 20
+NUM_THREADS = 4
 
 def send_email(to_email):
     try:
