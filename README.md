@@ -7,49 +7,43 @@
 
 
 ### Configuration Setup
-1) Open Command Prompt and  enter the following command - git clone https://github.com/Mayankrai01/MovieDatabase.git
-2) Open the MovieDatabase.sql in workbench and execute all the commands to create tables
-3) Now browse to the newly created folder using the command - cd MovieDatabse
+1) Open Command Prompt and  enter the following command - git clone https://github.com/Mayankrai01/Email-Campaign-Manager.git
+2) Open the emaildb2.sql in workbench and execute all the commands to create tables
+3) Now open the code editor and browse to the newly created folder using the command - cd Email-Campaign-Manager
 4) Run the following command to create a new conda virtual environment in current folder- conda create -p ./venv python=3.8 -y
 5) Enter Command - conda activate venv/
 6) Run the command - {pip install -r requirements.txt} to install the required libraries
-7) In the config2.py file, set up your MySQL database configuration:
-8) Enter Command -> python addListFromJson.py , this will add the movies in the imdb.json file to the database
-9) Enter Command -> python userFunctions.py
-10) Note Down the server and open postman and paste it in url box (below image is for reference)
-![image](https://github.com/Mayankrai01/MovieDatabase/assets/103130321/4099fe2c-8708-488e-8bd0-062bb532bcd5)
+7) In the config.py file, set up your MySQL database configuration:
+8) Enter Command -> python campaignFunctions.py
+9) Note Down the server and port and open brower and paste it in url box for testing purpose (below image is for reference)
+![image](https://github.com/Mayankrai01/Email-Campaign-Manager/assets/103130321/bb456abf-23b6-4885-8f47-17e8278f3995)
 
 
 
 ### Testing Add Subscriber API
-1) Edit the URL to - http://127.0.0.1:5000/adduser
+1) Edit the URL to - http://127.0.0.1:5000/subscribe
 2) Set Request to POST METHOD
 3) Add the data given below in body->raw->json
-4) {
-    "name":"testuser",
-    "email":"testuser@g.com",
-    "isAdmin":false,
-    "password":"passwordtest2"
-  }
+4) Note-Either User Email is an admin or they are the same user as Customer Email, since either the admin or the user itself can add customer in database
 5) {
-    "name":"testadmin",
-    "email":"admin@g.com",
-    "isAdmin":true,
-    "password":"adminpass"
+    User Email:m@g.com
+    Password: 1234
+    Customer Email:mayank.101120@gmail.com
+    First Name: mayank
   }
-6) Run the following command in your MYSQL workbench to check if the users are added- {select * from user;}
-7) It would show the two users with their names
+6) Run the following command in your MYSQL workbench to check if the users are added- {select * from Subscribers;}
+7) It would reflect the changes along with their details
 
 ### Testing Remove Subscriber API
-1) Edit the URL to -http://127.0.0.1:5000/movies
-2) Method - DELETE
+1) Edit the URL to - http://127.0.0.1:5000/subscribe
+2) Set Request to POST METHOD
 3) Add the data given below in body->raw->json
-4) {
-    "name":"The Big Bang Theory",
-    "user_email":"admin@g.com",
-    "entered_password":"adminpass",
-    "popularity":"92",
-    "imdb_score":8.8,
-    "director":"Chuck Lore"
+4) Note-Either User Email is an admin or they are the same user as Customer Email, since either the admin or the user itself can add customer in database
+5) {
+    User Email:m@g.com
+    Password: 1234
+    Customer Email:mayank.101120@gmail.com
+    Reason: Provide any reason
   }
-5) See the updated movies table and the movie "Big Bang Theory" would be deleted
+6) Run the following command in your MYSQL workbench to check if the users are added- {select * from Subscribers;}
+7) It would reflect the changes along with their details
