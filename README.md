@@ -48,7 +48,8 @@
 ### Testing Send Campaign Mails API
 1) Turn on the server if you haven't already done that (this is done so that if a user wants to unsubscribe we can do that, if the application is not running mail will be delivered but user can't unsubscribe)
 2) Run the command {python html-mail.py} to send mails to all active users
-3) In inbox you can click on Unsubscribe link to unsubscribe from campaign
-4) You can add your email in the Subscribers list and verify the same.
+3) PASSWORD- dpwucakekwxrvhjh
+4) In inbox you can click on Unsubscribe link to unsubscribe from campaign
+5) You can add your email in the Subscribers list and verify the same.
 
 
