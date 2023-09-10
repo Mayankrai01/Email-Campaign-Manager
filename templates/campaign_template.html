@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ subject }}</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+        }
+        .header {
+            text-align: center;
+        }
+        .content {
+            padding: 20px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>{{ subject }}</h1>
+            <p>{{ preview_text }}</p>
+        </div>
+        <div class="content">
+            <p>{{ published_date }}</p>
+            <p>{{ html_content }}</p>
+            <p>{{ plain_text_content }}</p>
+            <a class="button" href="{{ article_url }}">Read More <br></a>         
+        </div>
+        <a href="http://127.0.0.1:5000/unsubscribe">Click Here To Unsubscribe</a>   
+    </div>
+</body>
+</html>
