@@ -22,28 +22,24 @@
 
 ### Testing Add Subscriber API
 1) Edit the URL to - http://127.0.0.1:5000/subscribe
-2) Set Request to POST METHOD
-3) Add the data given below in body->raw->json
-4) Note-Either User Email is an admin or they are the same user as Customer Email, since either the admin or the user itself can add customer in database
-5) {
+2) Note-Either User Email is an admin or they are the same user as Customer Email, since either the admin or the user itself can add customer in database
+3) {
     User Email:m@g.com
     Password: 1234
     Customer Email:mayank.101120@gmail.com
     First Name: mayank
   }
-6) Run the following command in your MYSQL workbench to check if the users are added- {select * from Subscribers;}
-7) It would reflect the changes along with their details
+4) Run the following command in your MYSQL workbench to check if the users are added- {select * from Subscribers;}
+5) It would reflect the changes along with their details
 
 ### Testing Remove Subscriber API
-1) Edit the URL to - http://127.0.0.1:5000/subscribe
-2) Set Request to POST METHOD
-3) Add the data given below in body->raw->json
-4) Note-Either User Email is an admin or they are the same user as Customer Email, since either the admin or the user itself can remove customer from database
-5) {
+1) Edit the URL to - http://127.0.0.1:5000/unsubscribe
+2) Note-Either User Email is an admin or they are the same user as Customer Email, since either the admin or the user itself can remove customer from database
+3) {
     User Email:m@g.com
     Password: 1234
     Customer Email:mayank.101120@gmail.com
     Reason: Provide any reason
   }
-6) Run the following command in your MYSQL workbench to check if the users are added- {select * from Subscribers;}
-7) It would reflect the changes along with their details
+4) Run the following command in your MYSQL workbench to check if the users are added- {select * from Subscribers;}
+5) It would reflect the changes along with their details
