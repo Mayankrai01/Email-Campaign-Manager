@@ -1,6 +1,6 @@
 DEBUG = True
 SECRET_KEY = 'your-secret-key'
-MYSQL_HOST = 'localhost'
-MYSQL_USER = 'root'
-MYSQL_PASSWORD = 'Mangalbhawan@96'
+MYSQL_HOST = 'host-name'
+MYSQL_USER = 'user-name'
+MYSQL_PASSWORD = 'your-password'
 MYSQL_DB = 'email2_db'
