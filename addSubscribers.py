@@ -40,6 +40,7 @@ class SubscribeUser:
                         WHERE email = %s
                     """
                 cursor.execute(query, (data['email'],))
+                self.connection.commit()
                 return jsonify({'message': 'Email Subscribed Again'}), 201
             query = """INSERT INTO Subscribers (email, first_name)
                         VALUES (%s, %s)"""
