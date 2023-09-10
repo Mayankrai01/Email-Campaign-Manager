@@ -12,7 +12,7 @@
 2) Open the emaildb2.sql in workbench and execute all the commands to create tables
 3) Now open the code editor and browse to the newly created folder using the command - cd Email-Campaign-Manager
 4) Run the following command to create a new conda virtual environment in current folder- conda create -p ./venv python=3.8 -y
-5) Enter Command to activate the environment - conda activate venv/
+5) Enter Command to activate the environment - conda activate venv/  ---(note this will work only in command prompt, not in powershell make sure you are using that)
 6) Run the following command to install the required libraries- {pip install -r requirements.txt} 
 7) In the config.py file, set up your MySQL database configuration:
 8) Enter Command -> python campaignFunctions.py
