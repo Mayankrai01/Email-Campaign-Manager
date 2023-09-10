@@ -4,6 +4,7 @@
 1. [Configuration Setup](#configuration-setup)
 2. [Testing Add Subscriber API](#testing-add-subscriber-api)
 3. [Testing Remove Subscriber API](#testing-remove-subscriber-api)
+4. [Testing Send Campaign Mails API](#testing-send-campaign-mails-api)
 
 
 ### Configuration Setup
@@ -43,3 +44,10 @@
   }
 4) Run the following command in your MYSQL workbench to check if the users are added- {select * from Subscribers;}
 5) It would reflect the changes along with their details
+
+### Testing Send Campaign Mails API
+1) Turn on the server if you haven't already done that (this is done so that if a user wants to unsubscribe we can do that, if the application is not running mail will be delivered but user can't unsubscribe)
+2) Run the command {python html-mail.py} to send mails to all active users
+3) You can add your email in the Subscribers list and verify the same.
+
+
