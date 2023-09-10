@@ -2,8 +2,8 @@
 
 ## Table of Contents
 1. [Configuration Setup](#configuration-setup)
-2. [Testing Add Subscriber API](#testing-add-user-api)
-3. [Testing Remove Subscriber API](#testing-delete-movies-api)
+2. [Testing Add Subscriber API](#testing-add-subscriber-api)
+3. [Testing Remove Subscriber API](#testing-remove-subscriber-api)
 
 
 ### Configuration Setup
@@ -38,7 +38,7 @@
 1) Edit the URL to - http://127.0.0.1:5000/subscribe
 2) Set Request to POST METHOD
 3) Add the data given below in body->raw->json
-4) Note-Either User Email is an admin or they are the same user as Customer Email, since either the admin or the user itself can add customer in database
+4) Note-Either User Email is an admin or they are the same user as Customer Email, since either the admin or the user itself can remove customer from database
 5) {
     User Email:m@g.com
     Password: 1234
